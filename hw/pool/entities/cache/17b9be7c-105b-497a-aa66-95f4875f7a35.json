@@ -1,0 +1,19 @@
+{
+    "gates": {
+        "2d3bd29d-19d4-4956-9e05-541aeefd808d": {
+            "name": "Main",
+            "suffix": "",
+            "swap_group": 0,
+            "unit": "7046c123-89a2-421f-8c2e-67d771bdf50e"
+        }
+    },
+    "manufacturer": "",
+    "name": "Adjustable linear voltage regulator with enable",
+    "prefix": "U",
+    "tags": [
+        "ic",
+        "regulator"
+    ],
+    "type": "entity",
+    "uuid": "17b9be7c-105b-497a-aa66-95f4875f7a35"
+}

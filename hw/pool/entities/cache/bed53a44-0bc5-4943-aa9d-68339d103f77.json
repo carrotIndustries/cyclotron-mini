@@ -1,0 +1,20 @@
+{
+    "gates": {
+        "2b28696b-93b3-4c9e-91ab-2df7b211d34e": {
+            "name": "Main",
+            "suffix": "",
+            "swap_group": 0,
+            "unit": "2664fdd1-7e27-4ce8-af00-48b246296376"
+        }
+    },
+    "manufacturer": "",
+    "name": "Dual Diode (series)",
+    "prefix": "D",
+    "tags": [
+        "diode",
+        "dual",
+        "series"
+    ],
+    "type": "entity",
+    "uuid": "bed53a44-0bc5-4943-aa9d-68339d103f77"
+}

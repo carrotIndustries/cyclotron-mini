@@ -1,0 +1,16 @@
+{
+    "gates": {
+        "b16d48c7-83f7-484c-acc0-73e24a324e2c": {
+            "name": "Main",
+            "suffix": "",
+            "swap_group": 0,
+            "unit": "79173518-dae9-4649-8e03-595e17c1a3ac"
+        }
+    },
+    "manufacturer": "Lite-On",
+    "name": "LTR-329ALS-01",
+    "prefix": "U",
+    "tags": [],
+    "type": "entity",
+    "uuid": "9e152186-8a19-4b05-b9f2-ad573af22d95"
+}

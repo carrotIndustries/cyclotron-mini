@@ -1,0 +1,30 @@
+{
+    "MPN": [
+        false,
+        "MS1V-T1K 32.768kHz +-20PPM 12.5pF"
+    ],
+    "base": "c644194c-3a74-484a-8ca2-ecd262a69d7e",
+    "datasheet": [
+        true,
+        "https://www.microcrystal.com/fileadmin/Media/Products/32kHz/App.Manual/MS1V-T1K_Product-Doc.pdf"
+    ],
+    "description": [
+        false,
+        "Tuning Fork Crystal 32.768kHz, 20ppm, 12.5pF"
+    ],
+    "inherit_model": true,
+    "inherit_tags": true,
+    "manufacturer": [
+        true,
+        "Micro Crystal"
+    ],
+    "model": "8f398610-2e57-4097-bdea-a1f5de0ef7f9",
+    "parametric": {},
+    "tags": [],
+    "type": "part",
+    "uuid": "d2b4ffce-489a-46c8-a999-ff1d91d3a09e",
+    "value": [
+        true,
+        "MSV-T1K"
+    ]
+}

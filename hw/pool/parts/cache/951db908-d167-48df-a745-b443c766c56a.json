@@ -1,0 +1,52 @@
+{
+    "MPN": [
+        false,
+        "MS563702BA03-50"
+    ],
+    "datasheet": [
+        false,
+        "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=MS5637-02BA03&DocType=Data+Sheet&DocLang=English"
+    ],
+    "description": [
+        false,
+        "Low Voltage Barometric Pressure Sensor"
+    ],
+    "entity": "613209ad-f1ad-4b22-af8d-f1ad565f7177",
+    "inherit_model": true,
+    "inherit_tags": false,
+    "manufacturer": [
+        false,
+        "TE Connectivity"
+    ],
+    "model": "00000000-0000-0000-0000-000000000000",
+    "package": "c62b11df-64bd-4aed-aa42-5be0347069ba",
+    "pad_map": {
+        "66d8304d-dfe9-47de-93c4-0ef37a1a50ff": {
+            "gate": "f0fdad98-1403-4a0c-9899-f61d0d40f0ea",
+            "pin": "440ba985-1b61-41a8-a4f8-1ecd78cb9caa"
+        },
+        "6759862a-51d6-49cc-91fb-12c77ca2a559": {
+            "gate": "f0fdad98-1403-4a0c-9899-f61d0d40f0ea",
+            "pin": "39058616-fb4d-46ce-853e-c09496a23aba"
+        },
+        "7dd1731d-5cc6-4ccd-8159-63d2d6eba47b": {
+            "gate": "f0fdad98-1403-4a0c-9899-f61d0d40f0ea",
+            "pin": "42d6efb2-fc06-472f-b042-72c195b1d854"
+        },
+        "d676efb7-1a61-4f1c-828b-d99c42d10b74": {
+            "gate": "f0fdad98-1403-4a0c-9899-f61d0d40f0ea",
+            "pin": "caeca98b-a206-48f9-8a33-8f8c381f3b1e"
+        }
+    },
+    "parametric": {},
+    "tags": [
+        "ic",
+        "pressure-sensor"
+    ],
+    "type": "part",
+    "uuid": "951db908-d167-48df-a745-b443c766c56a",
+    "value": [
+        false,
+        ""
+    ]
+}

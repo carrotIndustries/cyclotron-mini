@@ -1,0 +1,47 @@
+{
+    "MPN": [
+        false,
+        "DGH105Q5R5"
+    ],
+    "datasheet": [
+        false,
+        ""
+    ],
+    "description": [
+        false,
+        "1F capacitor"
+    ],
+    "entity": "b0c2b8f8-aecf-4873-9458-c06eee2f7a00",
+    "inherit_model": false,
+    "inherit_tags": false,
+    "manufacturer": [
+        false,
+        "Illinois Capacitor"
+    ],
+    "model": "00000000-0000-0000-0000-000000000000",
+    "package": "24969b19-7c3f-48ca-834c-2d2f5d81b7dd",
+    "pad_map": {
+        "7afa9b0f-6881-4d87-b173-b7c67656b3e5": {
+            "gate": "23766b63-6ffc-4831-baee-ba1635a735b3",
+            "pin": "1e7cd34f-86db-4b34-9e0b-c276756301ab"
+        },
+        "ba4ce51a-9861-4dd6-a275-c75cf9fcdfa6": {
+            "gate": "23766b63-6ffc-4831-baee-ba1635a735b3",
+            "pin": "bb8460b5-34e6-41b0-9a9f-10eed3a3d8d6"
+        }
+    },
+    "parametric": {
+        "table": "capacitors",
+        "tolerance": "",
+        "type": "Electrolytic",
+        "value": "1",
+        "wvdc": "5.5"
+    },
+    "tags": [],
+    "type": "part",
+    "uuid": "1c14021c-8df7-44f6-b597-c8064d409e37",
+    "value": [
+        false,
+        "1 F"
+    ]
+}

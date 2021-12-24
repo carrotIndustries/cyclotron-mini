@@ -1,0 +1,26 @@
+{
+    "manufacturer": "",
+    "name": "Dual Diode (series)",
+    "pins": {
+        "55216f32-b884-4136-a0af-b22f78d7e0d8": {
+            "direction": "passive",
+            "names": [],
+            "primary_name": "A2/K1",
+            "swap_group": 0
+        },
+        "636f0119-9edd-413f-86f3-04bc8790b4e0": {
+            "direction": "passive",
+            "names": [],
+            "primary_name": "K2",
+            "swap_group": 0
+        },
+        "94e20e81-434b-4a2f-bb90-fab3eecec071": {
+            "direction": "passive",
+            "names": [],
+            "primary_name": "A1",
+            "swap_group": 0
+        }
+    },
+    "type": "unit",
+    "uuid": "2664fdd1-7e27-4ce8-af00-48b246296376"
+}

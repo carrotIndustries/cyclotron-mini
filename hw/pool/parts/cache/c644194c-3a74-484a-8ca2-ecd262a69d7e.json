@@ -1,0 +1,49 @@
+{
+    "MPN": [
+        false,
+        "MSV-T1K"
+    ],
+    "datasheet": [
+        false,
+        "https://www.microcrystal.com/fileadmin/Media/Products/32kHz/App.Manual/MS1V-T1K_Product-Doc.pdf"
+    ],
+    "description": [
+        false,
+        "Tuning Fork Crystal 30 kHz – 200 kHz"
+    ],
+    "entity": "03e9b2b2-36ee-4e93-a665-c9327c97cc89",
+    "inherit_model": false,
+    "inherit_tags": false,
+    "manufacturer": [
+        false,
+        "Micro Crystal"
+    ],
+    "model": "8f398610-2e57-4097-bdea-a1f5de0ef7f9",
+    "package": "bec0664b-b74c-4678-ac4d-96a1324be775",
+    "pad_map": {
+        "72cf62f3-5daa-4991-a7c5-93ff5763bf8c": {
+            "gate": "2a1bd72d-6d14-48c7-94d4-91d36e7a56c6",
+            "pin": "29995253-b4b1-4c7c-a049-b6db2713ca7c"
+        },
+        "c6645095-6c5b-4b1c-943e-37d3e46d51d7": {
+            "gate": "2a1bd72d-6d14-48c7-94d4-91d36e7a56c6",
+            "pin": "d118db9b-0850-4b8a-a5a0-5f50299fd232"
+        },
+        "fae5ca7a-93a0-4762-9a5a-1290da5bc782": {
+            "gate": "2a1bd72d-6d14-48c7-94d4-91d36e7a56c6",
+            "pin": "852f1fe6-06dc-4661-8a14-61a9a6ebb26a"
+        }
+    },
+    "parametric": {},
+    "tags": [
+        "crystal",
+        "passive",
+        "smd"
+    ],
+    "type": "part",
+    "uuid": "c644194c-3a74-484a-8ca2-ecd262a69d7e",
+    "value": [
+        false,
+        ""
+    ]
+}

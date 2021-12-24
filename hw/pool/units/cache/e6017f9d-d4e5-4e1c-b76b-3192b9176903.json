@@ -1,0 +1,56 @@
+{
+    "manufacturer": "Bosch Sensortec",
+    "name": "BMP280",
+    "pins": {
+        "14311296-3c0c-4c78-9d40-939063221f1c": {
+            "direction": "power_input",
+            "names": [],
+            "primary_name": "GND",
+            "swap_group": 0
+        },
+        "2f4c088c-3d25-479e-a8a2-5f59dd57205c": {
+            "direction": "input",
+            "names": [],
+            "primary_name": "CSB",
+            "swap_group": 0
+        },
+        "4721d324-d2f2-4d38-89df-d9407253c7a6": {
+            "direction": "power_input",
+            "names": [],
+            "primary_name": "VDDIO",
+            "swap_group": 0
+        },
+        "5f6a53ca-0410-4775-b0ee-b4514413bdcf": {
+            "direction": "power_input",
+            "names": [],
+            "primary_name": "VDD",
+            "swap_group": 0
+        },
+        "816573a3-aebd-4c6c-aa73-8e7e6bd09f01": {
+            "direction": "input",
+            "names": [
+                "SDA"
+            ],
+            "primary_name": "SDI",
+            "swap_group": 0
+        },
+        "b1296636-75aa-442f-8860-ee10a288621c": {
+            "direction": "input",
+            "names": [
+                "SCL"
+            ],
+            "primary_name": "SCK",
+            "swap_group": 0
+        },
+        "dbf53698-cc55-45e3-94b8-9a36dde265f0": {
+            "direction": "input",
+            "names": [
+                "ADDR"
+            ],
+            "primary_name": "SDO",
+            "swap_group": 0
+        }
+    },
+    "type": "unit",
+    "uuid": "e6017f9d-d4e5-4e1c-b76b-3192b9176903"
+}

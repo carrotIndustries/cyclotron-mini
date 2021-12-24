@@ -1,0 +1,32 @@
+{
+    "manufacturer": "Lite-On",
+    "name": "LTR-329ALS-01",
+    "pins": {
+        "0c6598c5-446b-4d1a-8391-fed5478ce2d2": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "SDA",
+            "swap_group": 0
+        },
+        "38f04ef2-30f4-42d9-9209-8beb22e98e40": {
+            "direction": "power_input",
+            "names": [],
+            "primary_name": "GND",
+            "swap_group": 0
+        },
+        "74dd9734-ba17-49ed-af8a-a55c0daad898": {
+            "direction": "power_input",
+            "names": [],
+            "primary_name": "VDD",
+            "swap_group": 0
+        },
+        "e3db94d8-b22e-42e3-b055-57218c90abf9": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "SCL",
+            "swap_group": 0
+        }
+    },
+    "type": "unit",
+    "uuid": "79173518-dae9-4649-8e03-595e17c1a3ac"
+}

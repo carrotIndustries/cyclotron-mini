@@ -1,0 +1,20 @@
+{
+    "gates": {
+        "2b28696b-93b3-4c9e-91ab-2df7b211d34e": {
+            "name": "Main",
+            "suffix": "",
+            "swap_group": 0,
+            "unit": "63c9ce1d-9b1e-4cfb-befb-4f5f877036eb"
+        }
+    },
+    "manufacturer": "",
+    "name": "Dual Schottky Diode (series)",
+    "prefix": "D",
+    "tags": [
+        "diode",
+        "dual",
+        "series"
+    ],
+    "type": "entity",
+    "uuid": "896c1a1e-0f88-4881-b5a8-d5a083173142"
+}

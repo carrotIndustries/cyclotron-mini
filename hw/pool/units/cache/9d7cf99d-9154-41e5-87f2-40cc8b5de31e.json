@@ -1,0 +1,156 @@
+{
+    "manufacturer": "Electronic Assembly",
+    "name": "EA DOGM",
+    "pins": {
+        "19cd427b-c8d4-4534-8c62-73a2956529ea": {
+            "direction": "input",
+            "names": [],
+            "primary_name": "~CS",
+            "swap_group": 0
+        },
+        "2b223d40-1db0-4a34-b57c-1a9dfd27cea0": {
+            "direction": "passive",
+            "names": [],
+            "primary_name": "A2+",
+            "swap_group": 0
+        },
+        "2f2dee66-3174-4798-987c-7160fdf4fd2c": {
+            "direction": "passive",
+            "names": [],
+            "primary_name": "C1-",
+            "swap_group": 0
+        },
+        "3853a7dc-a061-40a3-9173-b6af53ffefef": {
+            "direction": "input",
+            "names": [],
+            "primary_name": "D4",
+            "swap_group": 0
+        },
+        "44e1961f-b225-43fa-af52-4cead7485c7b": {
+            "direction": "passive",
+            "names": [],
+            "primary_name": "C2-",
+            "swap_group": 0
+        },
+        "45877b15-83c7-4627-a504-d469f62d6299": {
+            "direction": "power_input",
+            "names": [],
+            "primary_name": "VSS",
+            "swap_group": 0
+        },
+        "506f8af0-106d-4405-89a7-d6ce036a204f": {
+            "direction": "input",
+            "names": [],
+            "primary_name": "D2",
+            "swap_group": 0
+        },
+        "5f25015c-ef31-43b2-aada-8ee766e3f4ac": {
+            "direction": "passive",
+            "names": [],
+            "primary_name": "A1+",
+            "swap_group": 0
+        },
+        "73cc284b-b8bf-4d4a-9e05-d5daaa6d12d2": {
+            "direction": "input",
+            "names": [],
+            "primary_name": "D5",
+            "swap_group": 0
+        },
+        "84647c0f-11b6-4b9a-8792-7a92c9047322": {
+            "direction": "power_output",
+            "names": [],
+            "primary_name": "VOUT",
+            "swap_group": 0
+        },
+        "8f24043d-a4a9-4501-9caf-cb7cea05a8ed": {
+            "direction": "input",
+            "names": [],
+            "primary_name": "RS",
+            "swap_group": 0
+        },
+        "99bb83ad-0c3e-4ce9-8ca9-5b4d9fc779dc": {
+            "direction": "input",
+            "names": [],
+            "primary_name": "D3",
+            "swap_group": 0
+        },
+        "9bd9b942-1efd-4563-954c-b84c91289b9c": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "CAP1N",
+            "swap_group": 0
+        },
+        "a3f46dce-294b-469e-b3c7-d6118b8b743f": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "CAP1P",
+            "swap_group": 0
+        },
+        "aa9f9f8f-b9d3-407c-becc-fd35be695d2b": {
+            "direction": "input",
+            "names": [
+                "MOSI"
+            ],
+            "primary_name": "D7",
+            "swap_group": 0
+        },
+        "ac745d82-0bb1-47d0-aede-b489deb3d75c": {
+            "direction": "power_input",
+            "names": [],
+            "primary_name": "VDD",
+            "swap_group": 0
+        },
+        "ae6202ff-e1d3-451b-a124-8e55fdd09080": {
+            "direction": "input",
+            "names": [],
+            "primary_name": "D0",
+            "swap_group": 0
+        },
+        "b051b002-843d-45d9-95f4-4ccca618d141": {
+            "direction": "input",
+            "names": [],
+            "primary_name": "RESET",
+            "swap_group": 0
+        },
+        "b152e516-e887-4074-b37e-d7d93ee23c66": {
+            "direction": "input",
+            "names": [],
+            "primary_name": "R/~W",
+            "swap_group": 0
+        },
+        "b492cdd4-5d18-460c-9372-d02112eb620b": {
+            "direction": "input",
+            "names": [],
+            "primary_name": "E",
+            "swap_group": 0
+        },
+        "e013777f-2e74-4b27-b9d1-f74b791184b1": {
+            "direction": "input",
+            "names": [],
+            "primary_name": "PSB",
+            "swap_group": 0
+        },
+        "ec3bedce-470c-452c-ac59-c39a6aa55091": {
+            "direction": "input",
+            "names": [],
+            "primary_name": "D1",
+            "swap_group": 0
+        },
+        "f3840f65-ae67-4b98-ab86-524004a4c55a": {
+            "direction": "power_input",
+            "names": [],
+            "primary_name": "VIN",
+            "swap_group": 0
+        },
+        "f46ebebf-c6ca-48b6-aa3a-4160254aadc9": {
+            "direction": "input",
+            "names": [
+                "SCK"
+            ],
+            "primary_name": "D6",
+            "swap_group": 0
+        }
+    },
+    "type": "unit",
+    "uuid": "9d7cf99d-9154-41e5-87f2-40cc8b5de31e"
+}

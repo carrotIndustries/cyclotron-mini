@@ -1,0 +1,19 @@
+{
+    "gates": {
+        "f0fdad98-1403-4a0c-9899-f61d0d40f0ea": {
+            "name": "Main",
+            "suffix": "",
+            "swap_group": 0,
+            "unit": "8868faf4-b45b-4ce8-a31e-677dc538310d"
+        }
+    },
+    "manufacturer": "TE Connectivity",
+    "name": "MS563702BA03-50",
+    "prefix": "U",
+    "tags": [
+        "ic",
+        "pressure-sensor"
+    ],
+    "type": "entity",
+    "uuid": "613209ad-f1ad-4b22-af8d-f1ad565f7177"
+}

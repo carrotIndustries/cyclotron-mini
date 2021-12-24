@@ -1,0 +1,19 @@
+{
+    "gates": {
+        "6de1356e-a5c7-470b-9577-af12053c0c07": {
+            "name": "Main",
+            "suffix": "",
+            "swap_group": 0,
+            "unit": "7dfedfdc-1c7d-4049-accb-65637ca50bf0"
+        }
+    },
+    "manufacturer": "Texas Instruments",
+    "name": "MSP430FR4133IG56",
+    "prefix": "U",
+    "tags": [
+        "mcu",
+        "msp430"
+    ],
+    "type": "entity",
+    "uuid": "839d2ff4-7052-439d-867f-e5ab2a082678"
+}

@@ -1,0 +1,25 @@
+{
+    "manufacturer": "",
+    "name": "Single power",
+    "pins": {
+        "a8ba387d-1c68-4215-843f-9d669e48646d": {
+            "direction": "power_input",
+            "names": [
+                "Vdd"
+            ],
+            "primary_name": "Vcc",
+            "swap_group": 0
+        },
+        "aacf2d55-cf04-4c20-89c5-61704ef771f7": {
+            "direction": "power_input",
+            "names": [
+                "Vee",
+                "Vss"
+            ],
+            "primary_name": "GND",
+            "swap_group": 0
+        }
+    },
+    "type": "unit",
+    "uuid": "c5b399c9-5626-4cc6-b33d-5c0f3da5df5c"
+}

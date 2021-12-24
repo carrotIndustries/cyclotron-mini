@@ -1,0 +1,59 @@
+{
+    "MPN": [
+        false,
+        "ADP160/ADP162"
+    ],
+    "datasheet": [
+        false,
+        "https://www.analog.com/media/en/technical-documentation/data-sheets/ADP160_161_162_163.pdf"
+    ],
+    "description": [
+        false,
+        "Ultralow Quiescent Current, 150 mA, CMOS Linear Regulators"
+    ],
+    "entity": "857c7565-9bb3-4602-b9db-e969e6cd5ff1",
+    "flags": {
+        "base_part": "set",
+        "exclude_bom": "clear",
+        "exclude_pnp": "clear"
+    },
+    "inherit_model": false,
+    "inherit_tags": false,
+    "manufacturer": [
+        false,
+        "Analog Devices"
+    ],
+    "model": "e32f17fc-833e-4918-83d7-9158cd08875a",
+    "package": "7ff728b5-0c04-4985-98a9-b4566e72399f",
+    "pad_map": {
+        "7c55816d-3934-4fe3-ace5-658489abbd68": {
+            "gate": "2d3bd29d-19d4-4956-9e05-541aeefd808d",
+            "pin": "20f0495c-5e6e-4975-b440-1399ca09d3c3"
+        },
+        "839eb367-14e7-45ca-9134-0455a30447f4": {
+            "gate": "2d3bd29d-19d4-4956-9e05-541aeefd808d",
+            "pin": "559d5e91-2169-486b-9ece-8db9867957dd"
+        },
+        "b44e06c5-869d-4222-95fd-4579e452dd86": {
+            "gate": "2d3bd29d-19d4-4956-9e05-541aeefd808d",
+            "pin": "2f2e33ae-ea54-4fc9-b2c0-e6be3e1d02e0"
+        },
+        "dc4e29f6-1f62-4d87-9982-6875d018a3d6": {
+            "gate": "2d3bd29d-19d4-4956-9e05-541aeefd808d",
+            "pin": "304699c2-7433-4b03-ad2c-c8df631dd06f"
+        }
+    },
+    "parametric": {},
+    "tags": [
+        "ic",
+        "ldo",
+        "regulator"
+    ],
+    "type": "part",
+    "uuid": "cd621c16-eeb5-49e2-932a-e862bd036639",
+    "value": [
+        false,
+        ""
+    ],
+    "version": 1
+}

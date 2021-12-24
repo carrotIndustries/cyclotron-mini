@@ -1,0 +1,32 @@
+{
+    "manufacturer": "",
+    "name": "Single Comparator",
+    "pins": {
+        "c04e9a4e-64ef-4914-bf4b-c1148575ad69": {
+            "direction": "output",
+            "names": [
+                "Output"
+            ],
+            "primary_name": "Out",
+            "swap_group": 0
+        },
+        "d9299dc2-67ea-41ca-835e-6a4701093f93": {
+            "direction": "input",
+            "names": [
+                "IN-"
+            ],
+            "primary_name": "-",
+            "swap_group": 0
+        },
+        "ddc6b3bf-ee7c-4943-a670-4243439957b3": {
+            "direction": "input",
+            "names": [
+                "IN+"
+            ],
+            "primary_name": "+",
+            "swap_group": 0
+        }
+    },
+    "type": "unit",
+    "uuid": "48f60d7c-f769-409b-8865-f198c051926e"
+}

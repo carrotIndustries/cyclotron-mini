@@ -1,0 +1,65 @@
+{
+    "MPN": [
+        false,
+        "MIC5295"
+    ],
+    "datasheet": [
+        false,
+        "https://ww1.microchip.com/downloads/en/DeviceDoc/mic5295.pdf"
+    ],
+    "description": [
+        false,
+        "Low Quiescent Current, 150mA LDO"
+    ],
+    "entity": "17b9be7c-105b-497a-aa66-95f4875f7a35",
+    "inherit_model": false,
+    "inherit_tags": false,
+    "manufacturer": [
+        false,
+        "Micrel"
+    ],
+    "model": "d72afb4e-53cb-45cc-9693-bdca4991f737",
+    "orderable_MPNs": {
+        "64563801-caac-4bbf-932c-8f77808a695e": "MIC5295YD-TR",
+        "c96f9f41-a4df-46c4-b868-51b22ea4f6b2": "MIC5295YD"
+    },
+    "package": "b8b2b9f8-08a5-4c37-9dd2-d8225954a87d",
+    "pad_map": {
+        "01848b2c-9f86-4d87-8af8-9c5c6f8c6162": {
+            "gate": "2d3bd29d-19d4-4956-9e05-541aeefd808d",
+            "pin": "559d5e91-2169-486b-9ece-8db9867957dd"
+        },
+        "3b4a39b7-6907-4399-9c42-25242f82a0b3": {
+            "gate": "2d3bd29d-19d4-4956-9e05-541aeefd808d",
+            "pin": "304699c2-7433-4b03-ad2c-c8df631dd06f"
+        },
+        "73789bd1-42f7-4c3e-9a42-3916c64e1c57": {
+            "gate": "2d3bd29d-19d4-4956-9e05-541aeefd808d",
+            "pin": "20f0495c-5e6e-4975-b440-1399ca09d3c3"
+        },
+        "9e3b6a3f-cca7-492c-a29c-45cd4662d4c2": {
+            "gate": "2d3bd29d-19d4-4956-9e05-541aeefd808d",
+            "pin": "2f2e33ae-ea54-4fc9-b2c0-e6be3e1d02e0"
+        },
+        "d20d28f4-fd0c-456a-b5b0-f68f8872276a": {
+            "gate": "2d3bd29d-19d4-4956-9e05-541aeefd808d",
+            "pin": "20f0495c-5e6e-4975-b440-1399ca09d3c3"
+        },
+        "ee2f9f16-fb78-4c1d-a618-628865d619b3": {
+            "gate": "2d3bd29d-19d4-4956-9e05-541aeefd808d",
+            "pin": "e0906762-4246-4398-b86e-e970834e9a3b"
+        }
+    },
+    "parametric": {},
+    "tags": [
+        "ic",
+        "ldo",
+        "regulator"
+    ],
+    "type": "part",
+    "uuid": "77f335b7-9107-4ab4-89c9-71e2b5d84b58",
+    "value": [
+        false,
+        ""
+    ]
+}

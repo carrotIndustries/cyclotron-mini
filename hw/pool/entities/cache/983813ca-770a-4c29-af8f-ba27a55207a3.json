@@ -1,0 +1,20 @@
+{
+    "gates": {
+        "e5da453c-ba97-4fa0-8e05-5f6b4e026f87": {
+            "name": "Main",
+            "suffix": "",
+            "swap_group": 0,
+            "unit": "3ad5a007-ddd6-47d4-907c-a980adc1a95d"
+        }
+    },
+    "manufacturer": "",
+    "name": "Zener diode",
+    "prefix": "D",
+    "tags": [
+        "diode",
+        "discrete",
+        "zener"
+    ],
+    "type": "entity",
+    "uuid": "983813ca-770a-4c29-af8f-ba27a55207a3"
+}

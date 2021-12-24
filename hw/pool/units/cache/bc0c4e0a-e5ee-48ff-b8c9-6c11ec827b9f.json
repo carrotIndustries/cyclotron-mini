@@ -1,0 +1,32 @@
+{
+    "manufacturer": "",
+    "name": "Schottky Bridge Rectifier",
+    "pins": {
+        "1d3eb94b-f629-4c88-92a2-69c030563e7d": {
+            "direction": "passive",
+            "names": [],
+            "primary_name": "-",
+            "swap_group": 0
+        },
+        "70728dd7-50d3-4ed2-b00e-b8adc3f9d09e": {
+            "direction": "passive",
+            "names": [],
+            "primary_name": "AC2",
+            "swap_group": 1
+        },
+        "7e154de2-0147-4b7d-8d68-dbd4405e40fd": {
+            "direction": "passive",
+            "names": [],
+            "primary_name": "+",
+            "swap_group": 0
+        },
+        "d7919865-a58b-4a50-8db4-0560d5280ea8": {
+            "direction": "passive",
+            "names": [],
+            "primary_name": "AC1",
+            "swap_group": 1
+        }
+    },
+    "type": "unit",
+    "uuid": "bc0c4e0a-e5ee-48ff-b8c9-6c11ec827b9f"
+}

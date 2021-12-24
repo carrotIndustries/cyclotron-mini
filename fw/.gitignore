@@ -1,0 +1,10 @@
+*.o
+*.d
+*.elf
+segmap.c
+charmap.c
+.settings
+.project
+.cproject
+*.map
+.vscode

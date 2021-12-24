@@ -1,0 +1,30 @@
+{
+    "MPN": [
+        false,
+        "SI2301BDS-T1-E3"
+    ],
+    "base": "a97ea611-f135-4a23-9d59-24db0dfbc10b",
+    "datasheet": [
+        false,
+        "https://www.vishay.com/docs/72066/si2301bds.pdf"
+    ],
+    "description": [
+        false,
+        "P-Channel 2.5 V MOSFET"
+    ],
+    "inherit_model": true,
+    "inherit_tags": true,
+    "manufacturer": [
+        false,
+        "Vishay"
+    ],
+    "model": "1ebac498-5423-42dc-90a6-7ad333585f6a",
+    "parametric": {},
+    "tags": [],
+    "type": "part",
+    "uuid": "05aa4437-826a-42d1-83e6-9021a017e678",
+    "value": [
+        true,
+        "base sot-23 P-channel MOSFET"
+    ]
+}

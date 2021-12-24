@@ -1,0 +1,30 @@
+{
+    "MPN": [
+        false,
+        "SMBJxCA"
+    ],
+    "base": "bdc07df7-a242-442a-b4f5-114b49c7be51",
+    "datasheet": [
+        false,
+        "https://www.bourns.com/docs/Product-Datasheets/SMBJ.pdf"
+    ],
+    "description": [
+        false,
+        "SMBJ Transient Voltage Suppressor Diode Series"
+    ],
+    "inherit_model": true,
+    "inherit_tags": true,
+    "manufacturer": [
+        false,
+        "Bourns"
+    ],
+    "model": "03da5f4c-2cb8-435a-bd6c-865ee9a393fc",
+    "parametric": {},
+    "tags": [],
+    "type": "part",
+    "uuid": "4f495c45-fe1f-4e78-b5e1-92539bcd083c",
+    "value": [
+        true,
+        "base SMB zener diode"
+    ]
+}

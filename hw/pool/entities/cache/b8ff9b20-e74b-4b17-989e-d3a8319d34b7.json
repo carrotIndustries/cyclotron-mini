@@ -1,0 +1,16 @@
+{
+    "gates": {
+        "5059657d-a667-42c5-8ec1-ec2c58025927": {
+            "name": "Main",
+            "suffix": "",
+            "swap_group": 0,
+            "unit": "e6017f9d-d4e5-4e1c-b76b-3192b9176903"
+        }
+    },
+    "manufacturer": "Bosch Sensortec",
+    "name": "BMP280",
+    "prefix": "U",
+    "tags": [],
+    "type": "entity",
+    "uuid": "b8ff9b20-e74b-4b17-989e-d3a8319d34b7"
+}

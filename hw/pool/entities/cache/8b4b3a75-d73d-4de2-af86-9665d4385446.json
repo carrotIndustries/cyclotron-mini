@@ -1,0 +1,19 @@
+{
+    "gates": {
+        "628d2954-1807-45e6-a521-7d33bda8af06": {
+            "name": "Main",
+            "suffix": "",
+            "swap_group": 0,
+            "unit": "bc0c4e0a-e5ee-48ff-b8c9-6c11ec827b9f"
+        }
+    },
+    "manufacturer": "",
+    "name": "Schottky Bridge Rectifier",
+    "prefix": "D",
+    "tags": [
+        "diode",
+        "rectifier"
+    ],
+    "type": "entity",
+    "uuid": "8b4b3a75-d73d-4de2-af86-9665d4385446"
+}

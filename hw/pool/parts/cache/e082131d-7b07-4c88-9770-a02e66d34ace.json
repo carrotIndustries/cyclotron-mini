@@ -1,0 +1,36 @@
+{
+    "MPN": [
+        false,
+        "SMBJ5338B - SMBJ5388B"
+    ],
+    "base": "1ba909fc-2db1-442b-a8a2-50adc63022c3",
+    "datasheet": [
+        false,
+        "https://www.mccsemi.com/pdf/Products/SMBJ5338B-SMBJ5388B(SMB).pdf"
+    ],
+    "description": [
+        false,
+        "SMB Zener diode"
+    ],
+    "flags": {
+        "base_part": "set",
+        "exclude_bom": "clear",
+        "exclude_pnp": "clear"
+    },
+    "inherit_model": true,
+    "inherit_tags": true,
+    "manufacturer": [
+        false,
+        "Micro Commercial Co"
+    ],
+    "model": "03da5f4c-2cb8-435a-bd6c-865ee9a393fc",
+    "parametric": {},
+    "tags": [],
+    "type": "part",
+    "uuid": "e082131d-7b07-4c88-9770-a02e66d34ace",
+    "value": [
+        true,
+        "base SMB zener diode"
+    ],
+    "version": 1
+}

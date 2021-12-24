@@ -1,0 +1,60 @@
+{
+    "MPN": [
+        false,
+        "816-22-006-10-009101"
+    ],
+    "datasheet": [
+        false,
+        "https://www.mill-max.com/products/datasheet/sockets/816-22-006-10-009101"
+    ],
+    "description": [
+        false,
+        "Spring-Loaded Pogo Pin Header Strip"
+    ],
+    "entity": "c92588a0-86ac-4b1c-aa07-b591777d2617",
+    "inherit_model": false,
+    "inherit_tags": false,
+    "manufacturer": [
+        false,
+        "Mill-Max"
+    ],
+    "model": "71f6d4bc-e4b2-4946-a43f-0c3d8b1ea566",
+    "package": "b12c9e10-dff1-4016-b555-0e12a2cbc372",
+    "pad_map": {
+        "00d1b9ab-d324-4d4f-b1b1-0fe11acd75ca": {
+            "gate": "d5f74729-19b9-4eba-87f9-f789bd6babf8",
+            "pin": "c3b4ba45-ad58-43eb-9709-a71e815d9012"
+        },
+        "577d580a-2507-462e-a4b1-085c43c310c7": {
+            "gate": "d5f74729-19b9-4eba-87f9-f789bd6babf8",
+            "pin": "4b24441b-cbeb-49bc-9a30-277a9a11c2b6"
+        },
+        "7668105d-9381-499b-8ee5-e464bd7a27f8": {
+            "gate": "d5f74729-19b9-4eba-87f9-f789bd6babf8",
+            "pin": "b8924622-e129-4d44-a4ec-46cccc6fbcaf"
+        },
+        "99106426-73f4-4f78-b974-b54543f836a5": {
+            "gate": "d5f74729-19b9-4eba-87f9-f789bd6babf8",
+            "pin": "d5465e9d-439d-4a9c-b2a6-9ff92edf1f63"
+        },
+        "99b698a3-eb0d-4ca6-bc63-93872a5f4d53": {
+            "gate": "d5f74729-19b9-4eba-87f9-f789bd6babf8",
+            "pin": "203bb8a2-729f-4d85-9078-2023b941401f"
+        },
+        "99d2829d-69fb-45c3-9c29-a7fbd726d0ac": {
+            "gate": "d5f74729-19b9-4eba-87f9-f789bd6babf8",
+            "pin": "dd9ef2c9-0256-4f19-b1a9-2a4dffd82261"
+        }
+    },
+    "parametric": {},
+    "tags": [
+        "connector",
+        "pogo"
+    ],
+    "type": "part",
+    "uuid": "a4ac61ee-ffea-42b4-80e3-b866028adce9",
+    "value": [
+        false,
+        ""
+    ]
+}

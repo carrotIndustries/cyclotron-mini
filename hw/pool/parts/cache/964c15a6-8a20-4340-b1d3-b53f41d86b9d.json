@@ -1,0 +1,51 @@
+{
+    "MPN": [
+        false,
+        "TCJ-D base part"
+    ],
+    "datasheet": [
+        false,
+        "http://datasheets.avx.com/TCJ.pdf"
+    ],
+    "description": [
+        false,
+        "Conductive Polymer Solid Electrolytic Chip Capacitors"
+    ],
+    "entity": "b0c2b8f8-aecf-4873-9458-c06eee2f7a00",
+    "flags": {
+        "base_part": "set",
+        "exclude_bom": "clear",
+        "exclude_pnp": "clear"
+    },
+    "inherit_model": false,
+    "inherit_tags": false,
+    "manufacturer": [
+        false,
+        "AVX"
+    ],
+    "model": "b771fa80-b9b6-43ce-9f6f-2a3693ecf60b",
+    "package": "b7c595bc-2d38-426b-a63c-c337a6e0917d",
+    "pad_map": {
+        "202d1b7d-59f3-4573-af33-bf8901f62a88": {
+            "gate": "23766b63-6ffc-4831-baee-ba1635a735b3",
+            "pin": "bb8460b5-34e6-41b0-9a9f-10eed3a3d8d6"
+        },
+        "8e3ea2f9-457b-4e7a-a9b6-3dc5c02c3cb0": {
+            "gate": "23766b63-6ffc-4831-baee-ba1635a735b3",
+            "pin": "1e7cd34f-86db-4b34-9e0b-c276756301ab"
+        }
+    },
+    "parametric": {},
+    "tags": [
+        "capacitor",
+        "polymer",
+        "smd"
+    ],
+    "type": "part",
+    "uuid": "964c15a6-8a20-4340-b1d3-b53f41d86b9d",
+    "value": [
+        false,
+        ""
+    ],
+    "version": 1
+}

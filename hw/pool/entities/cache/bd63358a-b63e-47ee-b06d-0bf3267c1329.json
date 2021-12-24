@@ -1,0 +1,19 @@
+{
+    "gates": {
+        "513b92d8-6b7e-4782-bd4e-0748c38dbf49": {
+            "name": "Main",
+            "suffix": "",
+            "swap_group": 0,
+            "unit": "9d7cf99d-9154-41e5-87f2-40cc8b5de31e"
+        }
+    },
+    "manufacturer": "Electronic Assembly",
+    "name": "EA DOGM",
+    "prefix": "DS",
+    "tags": [
+        "display",
+        "lcd"
+    ],
+    "type": "entity",
+    "uuid": "bd63358a-b63e-47ee-b06d-0bf3267c1329"
+}

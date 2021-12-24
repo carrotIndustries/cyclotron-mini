@@ -1,0 +1,51 @@
+{
+    "MPN": [
+        false,
+        "SOD523 Zener diode"
+    ],
+    "datasheet": [
+        false,
+        ""
+    ],
+    "description": [
+        false,
+        ""
+    ],
+    "entity": "983813ca-770a-4c29-af8f-ba27a55207a3",
+    "flags": {
+        "base_part": "set",
+        "exclude_bom": "clear",
+        "exclude_pnp": "clear"
+    },
+    "inherit_model": false,
+    "inherit_tags": false,
+    "manufacturer": [
+        false,
+        ""
+    ],
+    "model": "111cbcc8-4a00-442f-9fcd-08e9768fdb56",
+    "package": "34bca1d3-ceb3-44e2-ac6a-962eb001f1bd",
+    "pad_map": {
+        "8efc5ca4-6860-4bea-a3a5-ae275f51f2d4": {
+            "gate": "e5da453c-ba97-4fa0-8e05-5f6b4e026f87",
+            "pin": "b57ca2a1-1bbf-43f0-b0a0-bf953094a8de"
+        },
+        "fc1a5dea-d788-4c3b-8433-22a07104a6bf": {
+            "gate": "e5da453c-ba97-4fa0-8e05-5f6b4e026f87",
+            "pin": "16ee5a5c-8eea-4447-ad48-04d973776e3a"
+        }
+    },
+    "parametric": {},
+    "tags": [
+        "diode",
+        "smd",
+        "zener"
+    ],
+    "type": "part",
+    "uuid": "3359b245-85dd-4adb-a8cd-0ca85142f185",
+    "value": [
+        false,
+        ""
+    ],
+    "version": 1
+}

@@ -1,0 +1,65 @@
+{
+    "arcs": {},
+    "junctions": {},
+    "lines": {},
+    "name": "Single power",
+    "pins": {
+        "a8ba387d-1c68-4215-843f-9d669e48646d": {
+            "length": 2500000,
+            "name_visible": false,
+            "orientation": "up",
+            "pad_visible": true,
+            "position": [
+                0,
+                5000000
+            ]
+        },
+        "aacf2d55-cf04-4c20-89c5-61704ef771f7": {
+            "length": 2500000,
+            "name_visible": false,
+            "orientation": "down",
+            "pad_visible": true,
+            "position": [
+                0,
+                -5000000
+            ]
+        }
+    },
+    "texts": {
+        "2c7265cd-87e4-43b2-b677-1c652b40df9e": {
+            "from_smash": false,
+            "layer": 0,
+            "origin": "center",
+            "placement": {
+                "angle": 0,
+                "mirror": false,
+                "shift": [
+                    -750000,
+                    -1875000
+                ]
+            },
+            "size": 1250000,
+            "text": "-",
+            "width": 0
+        },
+        "db48d752-01d4-4f05-b00d-2da963942684": {
+            "from_smash": false,
+            "layer": 0,
+            "origin": "center",
+            "placement": {
+                "angle": 0,
+                "mirror": false,
+                "shift": [
+                    -750000,
+                    1750000
+                ]
+            },
+            "size": 1250000,
+            "text": "+",
+            "width": 0
+        }
+    },
+    "type": "symbol",
+    "unit": "c5b399c9-5626-4cc6-b33d-5c0f3da5df5c",
+    "uuid": "b60ee9e3-bff0-41bb-8026-f75c6f0d06d5"
+}

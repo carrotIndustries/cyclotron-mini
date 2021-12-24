@@ -1,0 +1,30 @@
+{
+    "MPN": [
+        false,
+        "ADP162AUJZ-3.3-R7"
+    ],
+    "base": "cd621c16-eeb5-49e2-932a-e862bd036639",
+    "datasheet": [
+        true,
+        "https://www.analog.com/media/en/technical-documentation/data-sheets/ADP160_161_162_163.pdf"
+    ],
+    "description": [
+        true,
+        "Ultralow Quiescent Current, 150 mA, CMOS Linear Regulators"
+    ],
+    "inherit_model": true,
+    "inherit_tags": true,
+    "manufacturer": [
+        true,
+        "Analog Devices"
+    ],
+    "model": "e32f17fc-833e-4918-83d7-9158cd08875a",
+    "parametric": {},
+    "tags": [],
+    "type": "part",
+    "uuid": "10585f7f-4199-46d9-9c72-03f3ee214c2a",
+    "value": [
+        true,
+        "ADP160/ADP162"
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "MPN": [
+        false,
+        "NSR0170HT1G"
+    ],
+    "datasheet": [
+        false,
+        "http://www.onsemi.com/pub/Collateral/NSR0530H-D.PDF"
+    ],
+    "description": [
+        false,
+        "70 V Schottky barrier diode"
+    ],
+    "entity": "cba5158c-706d-4f10-b48a-2de7e5a82a4c",
+    "inherit_model": false,
+    "inherit_tags": false,
+    "manufacturer": [
+        false,
+        "ON Semiconductor"
+    ],
+    "model": "00000000-0000-0000-0000-000000000000",
+    "package": "16e0f97b-6b1d-4db0-92db-b406575a380b",
+    "pad_map": {
+        "773a74e2-ed84-43cc-b514-788422dbe101": {
+            "gate": "3a9cf76e-893b-4785-a6af-6f15da2086dc",
+            "pin": "16ee5a5c-8eea-4447-ad48-04d973776e3a"
+        },
+        "d3f91326-042a-4549-b2dd-5b7b45431266": {
+            "gate": "3a9cf76e-893b-4785-a6af-6f15da2086dc",
+            "pin": "b57ca2a1-1bbf-43f0-b0a0-bf953094a8de"
+        }
+    },
+    "parametric": {},
+    "tags": [
+        "diode",
+        "schottky"
+    ],
+    "type": "part",
+    "uuid": "f9b5a486-a0fc-4cdb-97cb-595d3731a857",
+    "value": [
+        false,
+        "NSR0170HT1G"
+    ]
+}

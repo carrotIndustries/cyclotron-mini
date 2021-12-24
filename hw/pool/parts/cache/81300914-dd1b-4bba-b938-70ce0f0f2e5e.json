@@ -1,0 +1,57 @@
+{
+    "MPN": [
+        false,
+        "MCP6541UT-E/OT"
+    ],
+    "datasheet": [
+        false,
+        "https://ww1.microchip.com/downloads/en/DeviceDoc/MCP6541%20Output%20SubMicroamp%20Comparators%2020001696K.pdf"
+    ],
+    "description": [
+        false,
+        "Push-Pull Output Sub-Microamp Comparator"
+    ],
+    "entity": "d3adfb3a-c233-4eb4-87f8-80343d862961",
+    "inherit_model": false,
+    "inherit_tags": false,
+    "manufacturer": [
+        false,
+        "Microchip"
+    ],
+    "model": "eb54e7ca-dcad-4e09-bd45-d2e32cddaa2a",
+    "package": "70c65846-2ee7-4d11-9d38-fe0fa84dc963",
+    "pad_map": {
+        "531c3759-a1b6-40c6-9474-5554dc94bcec": {
+            "gate": "bd7eb247-f40f-48a8-9689-12222ddb433e",
+            "pin": "aacf2d55-cf04-4c20-89c5-61704ef771f7"
+        },
+        "9fe9b6c3-f887-4523-976a-6aa050235658": {
+            "gate": "18256178-4af0-466a-bc77-60b2a173da56",
+            "pin": "c04e9a4e-64ef-4914-bf4b-c1148575ad69"
+        },
+        "bb9bbbd8-9aa2-49aa-98fd-b508ded56028": {
+            "gate": "18256178-4af0-466a-bc77-60b2a173da56",
+            "pin": "ddc6b3bf-ee7c-4943-a670-4243439957b3"
+        },
+        "be802fd1-5220-4258-a11f-c1529e6187e0": {
+            "gate": "bd7eb247-f40f-48a8-9689-12222ddb433e",
+            "pin": "a8ba387d-1c68-4215-843f-9d669e48646d"
+        },
+        "f827f54d-8a25-45ce-a5c6-aa1cdc05418a": {
+            "gate": "18256178-4af0-466a-bc77-60b2a173da56",
+            "pin": "d9299dc2-67ea-41ca-835e-6a4701093f93"
+        }
+    },
+    "parametric": {},
+    "tags": [
+        "comparator",
+        "ic",
+        "smd"
+    ],
+    "type": "part",
+    "uuid": "81300914-dd1b-4bba-b938-70ce0f0f2e5e",
+    "value": [
+        false,
+        ""
+    ]
+}

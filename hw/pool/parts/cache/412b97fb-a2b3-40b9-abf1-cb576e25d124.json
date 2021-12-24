@@ -1,0 +1,53 @@
+{
+    "MPN": [
+        false,
+        "CBRDFSH1"
+    ],
+    "datasheet": [
+        false,
+        "https://my.centralsemi.com/datasheets/CBRDFSH1-40_60_100.PDF"
+    ],
+    "description": [
+        false,
+        "Surface Mount 1.0A Silicon Schottky Bridge Rectifier"
+    ],
+    "entity": "8b4b3a75-d73d-4de2-af86-9665d4385446",
+    "inherit_model": false,
+    "inherit_tags": false,
+    "manufacturer": [
+        false,
+        "Central Semiconductor"
+    ],
+    "model": "00000000-0000-0000-0000-000000000000",
+    "package": "6def0771-16ad-4b5e-aab6-4f43a7e246cf",
+    "pad_map": {
+        "021ba6ae-7707-49a8-b58a-9f41829b154d": {
+            "gate": "628d2954-1807-45e6-a521-7d33bda8af06",
+            "pin": "7e154de2-0147-4b7d-8d68-dbd4405e40fd"
+        },
+        "7f51df17-fbb2-4f72-baa1-1084550e2ac5": {
+            "gate": "628d2954-1807-45e6-a521-7d33bda8af06",
+            "pin": "d7919865-a58b-4a50-8db4-0560d5280ea8"
+        },
+        "9f7ba16c-5741-4877-91e0-b5980bafd7be": {
+            "gate": "628d2954-1807-45e6-a521-7d33bda8af06",
+            "pin": "70728dd7-50d3-4ed2-b00e-b8adc3f9d09e"
+        },
+        "a80417b1-bd0e-4f69-aca7-262a4f11f4a6": {
+            "gate": "628d2954-1807-45e6-a521-7d33bda8af06",
+            "pin": "1d3eb94b-f629-4c88-92a2-69c030563e7d"
+        }
+    },
+    "parametric": {},
+    "tags": [
+        "rectifier",
+        "schottky",
+        "smd"
+    ],
+    "type": "part",
+    "uuid": "412b97fb-a2b3-40b9-abf1-cb576e25d124",
+    "value": [
+        false,
+        ""
+    ]
+}

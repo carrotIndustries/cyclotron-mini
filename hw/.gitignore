@@ -1,0 +1,6 @@
+pool/*.db
+pool/*.db-*
+*.imp_meta
+*.autosave
+*.bak
+pool/3d_models/cache/*/3d_models/local

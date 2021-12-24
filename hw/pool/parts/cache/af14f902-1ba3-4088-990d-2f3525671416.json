@@ -1,0 +1,50 @@
+{
+    "MPN": [
+        false,
+        "BAV199"
+    ],
+    "datasheet": [
+        false,
+        "https://www.infineon.com/dgdl/Infineon-BAV199SERIES-DS-v01_01-en.pdf?fileId=db3a30431400ef6801141cba733104e5"
+    ],
+    "description": [
+        false,
+        "Dual Series Silicon Low Leakage Diode"
+    ],
+    "entity": "bed53a44-0bc5-4943-aa9d-68339d103f77",
+    "inherit_model": false,
+    "inherit_tags": false,
+    "manufacturer": [
+        false,
+        "Infineon Technologies"
+    ],
+    "model": "00000000-0000-0000-0000-000000000000",
+    "package": "a37e4931-af72-4de0-b4e4-0357747ba44d",
+    "pad_map": {
+        "531c3759-a1b6-40c6-9474-5554dc94bcec": {
+            "gate": "2b28696b-93b3-4c9e-91ab-2df7b211d34e",
+            "pin": "55216f32-b884-4136-a0af-b22f78d7e0d8"
+        },
+        "9fe9b6c3-f887-4523-976a-6aa050235658": {
+            "gate": "2b28696b-93b3-4c9e-91ab-2df7b211d34e",
+            "pin": "94e20e81-434b-4a2f-bb90-fab3eecec071"
+        },
+        "be802fd1-5220-4258-a11f-c1529e6187e0": {
+            "gate": "2b28696b-93b3-4c9e-91ab-2df7b211d34e",
+            "pin": "636f0119-9edd-413f-86f3-04bc8790b4e0"
+        }
+    },
+    "parametric": {},
+    "tags": [
+        "diode",
+        "dual",
+        "low-leakage",
+        "series"
+    ],
+    "type": "part",
+    "uuid": "af14f902-1ba3-4088-990d-2f3525671416",
+    "value": [
+        false,
+        ""
+    ]
+}

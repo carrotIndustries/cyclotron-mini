@@ -1,0 +1,30 @@
+{
+    "MPN": [
+        false,
+        "SMBJ5342B-TP"
+    ],
+    "base": "e082131d-7b07-4c88-9770-a02e66d34ace",
+    "datasheet": [
+        true,
+        "https://www.mccsemi.com/pdf/Products/SMBJ5338B-SMBJ5388B(SMB).pdf"
+    ],
+    "description": [
+        false,
+        "SMB Zener diode 6.8V 5W"
+    ],
+    "inherit_model": true,
+    "inherit_tags": true,
+    "manufacturer": [
+        true,
+        "Micro Commercial Co"
+    ],
+    "model": "03da5f4c-2cb8-435a-bd6c-865ee9a393fc",
+    "parametric": {},
+    "tags": [],
+    "type": "part",
+    "uuid": "fef29a20-f885-47d7-998f-d50fdf140d83",
+    "value": [
+        true,
+        "SMBJ5338B - SMBJ5388B"
+    ]
+}

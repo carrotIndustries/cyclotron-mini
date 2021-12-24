@@ -1,0 +1,36 @@
+{
+    "MPN": [
+        false,
+        "ESD8351XV2T"
+    ],
+    "base": "3359b245-85dd-4adb-a8cd-0ca85142f185",
+    "datasheet": [
+        false,
+        "https://www.onsemi.com/pdf/datasheet/esd8351-d.pdf"
+    ],
+    "description": [
+        false,
+        "Low Capacitance ESD Protection Diode for High Speed Data Line"
+    ],
+    "inherit_model": true,
+    "inherit_tags": true,
+    "manufacturer": [
+        false,
+        "ON Semiconductor"
+    ],
+    "model": "111cbcc8-4a00-442f-9fcd-08e9768fdb56",
+    "orderable_MPNs": {
+        "3d25518b-5906-4124-919c-b599f90bfbc6": "ESD8351XV2T1G",
+        "d3736d4c-905a-40ba-a38d-ef18fe022cec": "ESD8351XV2T5G"
+    },
+    "parametric": {},
+    "tags": [
+        "tvs"
+    ],
+    "type": "part",
+    "uuid": "4c01fff4-2374-4212-97ea-b83b027dd483",
+    "value": [
+        true,
+        "SOD523 Zener diode"
+    ]
+}

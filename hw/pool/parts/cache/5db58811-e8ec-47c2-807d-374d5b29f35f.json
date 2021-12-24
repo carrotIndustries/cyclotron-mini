@@ -1,0 +1,68 @@
+{
+    "MPN": [
+        false,
+        "BMP280"
+    ],
+    "datasheet": [
+        false,
+        "https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmp280-ds001.pdf"
+    ],
+    "description": [
+        false,
+        "Digital Pressure Sensor"
+    ],
+    "entity": "b8ff9b20-e74b-4b17-989e-d3a8319d34b7",
+    "inherit_model": true,
+    "inherit_tags": false,
+    "manufacturer": [
+        false,
+        "Bosch Sensortec"
+    ],
+    "model": "00000000-0000-0000-0000-000000000000",
+    "package": "17bf0e37-d8a5-48f6-a4a2-a4a369977dcd",
+    "pad_map": {
+        "1f74af1f-9b25-46bf-9860-71b791ef1c94": {
+            "gate": "5059657d-a667-42c5-8ec1-ec2c58025927",
+            "pin": "5f6a53ca-0410-4775-b0ee-b4514413bdcf"
+        },
+        "26f0f62f-c1ef-4bfa-9af7-370de8770986": {
+            "gate": "5059657d-a667-42c5-8ec1-ec2c58025927",
+            "pin": "2f4c088c-3d25-479e-a8a2-5f59dd57205c"
+        },
+        "64454646-4e1b-4512-88ff-2079de1feca9": {
+            "gate": "5059657d-a667-42c5-8ec1-ec2c58025927",
+            "pin": "4721d324-d2f2-4d38-89df-d9407253c7a6"
+        },
+        "6de69fe9-7b76-4b90-aaa7-43b75bd91d4e": {
+            "gate": "5059657d-a667-42c5-8ec1-ec2c58025927",
+            "pin": "b1296636-75aa-442f-8860-ee10a288621c"
+        },
+        "9eeb07a1-6f7a-4113-9301-359b312d1bf5": {
+            "gate": "5059657d-a667-42c5-8ec1-ec2c58025927",
+            "pin": "14311296-3c0c-4c78-9d40-939063221f1c"
+        },
+        "aa8ce3e1-89e8-4b1c-9906-317c2e77432c": {
+            "gate": "5059657d-a667-42c5-8ec1-ec2c58025927",
+            "pin": "dbf53698-cc55-45e3-94b8-9a36dde265f0"
+        },
+        "f1ce5304-76d2-4ea5-a836-180f0605290b": {
+            "gate": "5059657d-a667-42c5-8ec1-ec2c58025927",
+            "pin": "14311296-3c0c-4c78-9d40-939063221f1c"
+        },
+        "ff754c3f-c83e-4476-8f90-3e8dc1e10096": {
+            "gate": "5059657d-a667-42c5-8ec1-ec2c58025927",
+            "pin": "816573a3-aebd-4c6c-aa73-8e7e6bd09f01"
+        }
+    },
+    "parametric": {},
+    "tags": [
+        "ic",
+        "pressure-sensor"
+    ],
+    "type": "part",
+    "uuid": "5db58811-e8ec-47c2-807d-374d5b29f35f",
+    "value": [
+        false,
+        ""
+    ]
+}

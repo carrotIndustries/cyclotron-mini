@@ -1,0 +1,32 @@
+{
+    "manufacturer": "TE Connectivity",
+    "name": "MS563702BA03-50",
+    "pins": {
+        "39058616-fb4d-46ce-853e-c09496a23aba": {
+            "direction": "power_input",
+            "names": [],
+            "primary_name": "VDD",
+            "swap_group": 0
+        },
+        "42d6efb2-fc06-472f-b042-72c195b1d854": {
+            "direction": "power_input",
+            "names": [],
+            "primary_name": "GND",
+            "swap_group": 0
+        },
+        "440ba985-1b61-41a8-a4f8-1ecd78cb9caa": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "SDA",
+            "swap_group": 0
+        },
+        "caeca98b-a206-48f9-8a33-8f8c381f3b1e": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "SCL",
+            "swap_group": 0
+        }
+    },
+    "type": "unit",
+    "uuid": "8868faf4-b45b-4ce8-a31e-677dc538310d"
+}

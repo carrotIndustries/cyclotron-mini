@@ -1,0 +1,20 @@
+{
+    "gates": {
+        "23766b63-6ffc-4831-baee-ba1635a735b3": {
+            "name": "Main",
+            "suffix": "",
+            "swap_group": 0,
+            "unit": "88b1ac21-1cd5-4138-83c8-04df2f8aa7e0"
+        }
+    },
+    "manufacturer": "",
+    "name": "Two-terminal polarized capacitor",
+    "prefix": "C",
+    "tags": [
+        "capacitor",
+        "generic",
+        "passive"
+    ],
+    "type": "entity",
+    "uuid": "b0c2b8f8-aecf-4873-9458-c06eee2f7a00"
+}

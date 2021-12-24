@@ -1,0 +1,30 @@
+{
+    "MPN": [
+        false,
+        "CBRDFSH1-100"
+    ],
+    "base": "412b97fb-a2b3-40b9-abf1-cb576e25d124",
+    "datasheet": [
+        true,
+        "https://my.centralsemi.com/datasheets/CBRDFSH1-40_60_100.PDF"
+    ],
+    "description": [
+        true,
+        "Surface Mount 1.0A Silicon Schottky Bridge Rectifier"
+    ],
+    "inherit_model": true,
+    "inherit_tags": true,
+    "manufacturer": [
+        true,
+        "Central Semiconductor"
+    ],
+    "model": "00000000-0000-0000-0000-000000000000",
+    "parametric": {},
+    "tags": [],
+    "type": "part",
+    "uuid": "bc3b1985-771c-47bc-8eef-f11f4b28b34a",
+    "value": [
+        true,
+        "CBRDFSH1"
+    ]
+}

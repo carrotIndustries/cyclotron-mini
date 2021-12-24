@@ -1,0 +1,36 @@
+{
+    "MPN": [
+        false,
+        "TCJD227M016R0050"
+    ],
+    "base": "964c15a6-8a20-4340-b1d3-b53f41d86b9d",
+    "datasheet": [
+        true,
+        "http://datasheets.avx.com/TCJ.pdf"
+    ],
+    "description": [
+        true,
+        "Conductive Polymer Solid Electrolytic Chip Capacitors"
+    ],
+    "inherit_model": true,
+    "inherit_tags": true,
+    "manufacturer": [
+        true,
+        "AVX"
+    ],
+    "model": "b771fa80-b9b6-43ce-9f6f-2a3693ecf60b",
+    "parametric": {
+        "table": "capacitors",
+        "tolerance": "20",
+        "type": "Polymer",
+        "value": "0.00022",
+        "wvdc": "16"
+    },
+    "tags": [],
+    "type": "part",
+    "uuid": "20eff179-1819-4dbe-ac5a-ca0bdc476e5c",
+    "value": [
+        false,
+        "220 µF"
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "MPN": [
+        false,
+        "LTR-329ALS-01"
+    ],
+    "datasheet": [
+        false,
+        "https://optoelectronics.liteon.com/upload/download/DS86-2014-0006/LTR-329ALS-01_DS_V1.pdf"
+    ],
+    "description": [
+        false,
+        "Ambient light sensor"
+    ],
+    "entity": "9e152186-8a19-4b05-b9f2-ad573af22d95",
+    "inherit_model": true,
+    "inherit_tags": false,
+    "manufacturer": [
+        false,
+        "Lite-On"
+    ],
+    "model": "00000000-0000-0000-0000-000000000000",
+    "package": "e3c84254-b07e-4749-8464-3cd316d8744b",
+    "pad_map": {
+        "1cb291d4-e2fe-458f-874c-bd91a92b1e76": {
+            "gate": "b16d48c7-83f7-484c-acc0-73e24a324e2c",
+            "pin": "0c6598c5-446b-4d1a-8391-fed5478ce2d2"
+        },
+        "452d1323-8da7-4f7f-8017-4e588b6be321": {
+            "gate": "b16d48c7-83f7-484c-acc0-73e24a324e2c",
+            "pin": "38f04ef2-30f4-42d9-9209-8beb22e98e40"
+        },
+        "e6c49573-ace3-4f2a-b24d-26956383dac4": {
+            "gate": "b16d48c7-83f7-484c-acc0-73e24a324e2c",
+            "pin": "e3db94d8-b22e-42e3-b055-57218c90abf9"
+        },
+        "e8379cc5-d1ac-4aa8-a863-38b632ba5493": {
+            "gate": "b16d48c7-83f7-484c-acc0-73e24a324e2c",
+            "pin": "74dd9734-ba17-49ed-af8a-a55c0daad898"
+        }
+    },
+    "parametric": {},
+    "tags": [
+        "sensor"
+    ],
+    "type": "part",
+    "uuid": "f0e8d986-f6a9-45f6-b77e-ae61dcf28438",
+    "value": [
+        false,
+        ""
+    ]
+}

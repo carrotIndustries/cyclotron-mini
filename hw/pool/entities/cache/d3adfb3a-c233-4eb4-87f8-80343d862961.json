@@ -1,0 +1,26 @@
+{
+    "gates": {
+        "18256178-4af0-466a-bc77-60b2a173da56": {
+            "name": "Main",
+            "suffix": "",
+            "swap_group": 0,
+            "unit": "48f60d7c-f769-409b-8865-f198c051926e"
+        },
+        "bd7eb247-f40f-48a8-9689-12222ddb433e": {
+            "name": "Power",
+            "suffix": "",
+            "swap_group": 0,
+            "unit": "c5b399c9-5626-4cc6-b33d-5c0f3da5df5c"
+        }
+    },
+    "manufacturer": "",
+    "name": "Single Comparator",
+    "prefix": "U",
+    "tags": [
+        "comparator",
+        "generic",
+        "single"
+    ],
+    "type": "entity",
+    "uuid": "d3adfb3a-c233-4eb4-87f8-80343d862961"
+}
