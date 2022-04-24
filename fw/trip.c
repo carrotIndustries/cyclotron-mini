@@ -114,28 +114,9 @@ uint8_t trip_get_avg_kmh(const trip_t *t)
     return (trip_get_avg_0p1kmh(t) + 5) / 10;
 }
 
-static hour_min_t h_m_from_s(uint32_t s)
+uint32_t trip_get_time_total(const trip_t *t)
 {
-    hour_min_t r;
-    uint32_t min_total = s / 60;
-    r.m = min_total % 60;
-    r.h = min_total / 60;
-    return r;
-}
-
-hour_min_t trip_get_time_in_motion_h_m(const trip_t *t)
-{
-    return h_m_from_s(t->time_in_motion_s);
-}
-
-hour_min_t trip_get_time_still_h_m(const trip_t *t)
-{
-    return h_m_from_s(t->time_still_s);
-}
-
-hour_min_t trip_get_time_total_h_m(const trip_t *t)
-{
-    return h_m_from_s(t->time_still_s + t->time_in_motion_s);
+    return t->time_still_s + t->time_in_motion_s;
 }
 
 uint16_t trip_get_total_km()

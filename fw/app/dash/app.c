@@ -36,9 +36,9 @@ typedef enum {
 #define R(x) (1 << (READOUT_##x))
 static const uint16_t readouts_available_in_motion = R(TEMP) | R(CLOCK) | R(TRIP_KM) | R(TRIP_VMAX) | R(TRIP_VAVG)
                                                      | R(TRIP_TIME_IN_MOTION) | R(ALTI) | R(ASC) | R(DESC);
-static const uint16_t readouts_available_in_review = R(TRIP_KM) | R(TRIP_VMAX) | R(TRIP_VAVG) | R(TRIP_TIME_IN_MOTION)
-                                                     | R(TRIP_TIME_STILL) | R(TRIP_TIME_TOTAL) | R(ASC) | R(DESC)
-                                                     | R(ALTI_MAX) | R(ALTI_MIN);
+static const uint16_t readouts_available_in_review = R(TRIP_KM) | R(TRIP_VMAX) | R(TRIP_VAVG) | R(TRIP_VAVG_TOTAL)
+                                                     | R(TRIP_TIME_IN_MOTION) | R(TRIP_TIME_STILL) | R(TRIP_TIME_TOTAL)
+                                                     | R(ASC) | R(DESC) | R(ALTI_MAX) | R(ALTI_MIN);
 #undef R
 
 static uint8_t readout_current = READOUT_TRIP_KM;
@@ -90,6 +90,26 @@ void put_trip_km(uint8_t pos, uint32_t distance_m)
     }
     else {
         lcd_puti(pos + 0, 4, trip_km);
+    }
+}
+
+static void put_trip_time(uint8_t pos, uint32_t sec)
+{
+    uint32_t min_total = sec / 60;
+    uint8_t m = min_total % 60;
+    uint8_t h = min_total / 60;
+    uint8_t s = sec % 60;
+    if (h) {
+        lcd_puti(pos, 2, h);
+        lcd_putc(pos + 2, ':');
+        lcd_puti_lz(pos + 3, 2, m);
+        lcd_putc(pos + 5, 'h');
+    }
+    else {
+        lcd_puti(pos, 2, m);
+        lcd_putc(pos + 2, ':');
+        lcd_puti_lz(pos + 3, 2, s);
+        lcd_putc(pos + 5, 'm');
     }
 }
 
@@ -249,17 +269,12 @@ static void app_main(uint8_t view, const app_t *app, event_t event)
     } break;
 
     case READOUT_TRIP_TIME_IN_MOTION: {
-        hour_min_t t = trip_get_time_in_motion_h_m(trip);
         if (!in_motion) {
             lcd_puts(0, "Tm");
-            lcd_puti(2, 2, t.h);
-            lcd_putc(4, ':');
-            lcd_puti_lz(5, 2, t.m);
+            put_trip_time(2, trip->time_in_motion_s);
         }
         else {
-            lcd_puti(0, 2, t.h);
-            lcd_putc(2, ':');
-            lcd_puti_lz(3, 2, t.m);
+            put_trip_time(0, trip->time_in_motion_s);
         }
     } break;
 
@@ -272,19 +287,13 @@ static void app_main(uint8_t view, const app_t *app, event_t event)
     } break;
 
     case READOUT_TRIP_TIME_STILL: {
-        hour_min_t t = trip_get_time_still_h_m(trip);
         lcd_puts(0, "Ts");
-        lcd_puti(2, 2, t.h);
-        lcd_putc(4, ':');
-        lcd_puti_lz(5, 2, t.m);
+        put_trip_time(2, trip->time_still_s);
     } break;
 
     case READOUT_TRIP_TIME_TOTAL: {
-        hour_min_t t = trip_get_time_total_h_m(trip);
         lcd_puts(0, "Tt");
-        lcd_puti(2, 2, t.h);
-        lcd_putc(4, ':');
-        lcd_puti_lz(5, 2, t.m);
+        put_trip_time(2, trip_get_time_total(trip));
     } break;
 
     case READOUT_TRIP_VAVG: {

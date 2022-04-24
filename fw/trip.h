@@ -27,9 +27,7 @@ uint8_t trip_get_avg_kmh(const trip_t *t);
 uint16_t trip_get_avg_0p1kmh(const trip_t *t);
 uint16_t trip_get_total_avg_0p1kmh(const trip_t *t);
 
-hour_min_t trip_get_time_in_motion_h_m(const trip_t *t);
-hour_min_t trip_get_time_still_h_m(const trip_t *t);
-hour_min_t trip_get_time_total_h_m(const trip_t *t);
+uint32_t trip_get_time_total(const trip_t *t);
 
 uint16_t trip_get_total_km();
 void trip_set_total_km(uint16_t km);
