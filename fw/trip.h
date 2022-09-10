@@ -33,3 +33,7 @@ uint16_t trip_get_total_km();
 void trip_set_total_km(uint16_t km);
 void trip_reset_day_km();
 uint32_t trip_get_day_m();
+
+void trip_set_pause(uint8_t pause);
+uint8_t trip_get_pause();
+void trip_inc_time_still();

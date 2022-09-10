@@ -38,6 +38,15 @@ void __attribute__((interrupt((TIMER0_A1_VECTOR)))) TA_ISR(void)
                 return;
             }
 
+            static uint8_t sec_div = 3;
+            if (sec_div == 0) {
+                trip_inc_time_still();
+                sec_div = 3;
+            }
+            else {
+                sec_div--;
+            }
+
             if (button_read_raw() & BUTTON_ALL)
                 LPM3_EXIT;
 

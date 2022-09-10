@@ -7,6 +7,21 @@
 
 static menu_state_t menu_state;
 
+
+static void handler_trip_toggle_pause(void *ud)
+{
+    trip_set_pause(!trip_get_pause());
+    app_set_view(&app_app_dash, VIEW_MAIN);
+}
+
+static const char *pause_trip = "PauseTrp";
+static const char *resume_trip = "ResumTrp";
+
+static menu_item_text_t menu_item_toggle_pause = {
+        .text = 0,
+        .handler = handler_trip_toggle_pause,
+};
+
 static void handler_trip_new(void *ud)
 {
 
@@ -90,8 +105,13 @@ static const menu_item_adj_t menu_item_mock_counts_per_second = {
 
 
 static const menu_item_unknown_t *menu_items[] = {
-        (void *)&menu_item_new_trip,     (void *)&menu_item_review_trip, (void *)&menu_item_reset_trip,
-        (void *)&menu_item_reset_day_km, (void *)&menu_item_alti_cal,    (void *)&menu_item_mock_counts_per_second,
+        (void *)&menu_item_toggle_pause,
+        (void *)&menu_item_new_trip,
+        (void *)&menu_item_reset_day_km,
+        (void *)&menu_item_review_trip,
+        (void *)&menu_item_reset_trip,
+        (void *)&menu_item_alti_cal,
+        (void *)&menu_item_mock_counts_per_second,
 };
 
 static void menu_exit(void)
@@ -114,5 +134,6 @@ void dash_menu_main(uint8_t view, const app_t *app, event_t event)
 
 void dash_menu_enter(uint8_t view, const app_t *app)
 {
+    menu_item_toggle_pause.text = trip_get_pause() ? resume_trip : pause_trip;
     menu_state.item_current = 0;
 }

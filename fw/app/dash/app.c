@@ -354,8 +354,12 @@ static void app_main(uint8_t view, const app_t *app, event_t event)
     case N_READOUTS:
         break;
     }
-    if (in_motion)
-        lcd_puti(6, 2, kmh);
+    if (in_motion) {
+        if (trip_get_pause() && blink)
+            lcd_puts(6, "--");
+        else
+            lcd_puti(6, 2, kmh);
+    }
     if (indicator_timeout)
         lcd_set_cursor(get_indicator(readout_current));
     else

@@ -7,6 +7,8 @@
 
 trip_t *trip_current = persist.trips;
 
+static uint8_t pause_trip = 0;
+
 void trip_init()
 {
     trip_current = &persist.trips[persist.trip_current];
@@ -14,6 +16,7 @@ void trip_init()
 
 void trip_new()
 {
+    trip_set_pause(0);
     if (trip_current->distance_m == 0)
         return;
     persist.trip_current++;
@@ -27,6 +30,7 @@ static int16_t last_alti = 0;
 
 void trip_clear(trip_t *t)
 {
+    trip_set_pause(0);
     t->distance_m = 0;
     t->vmax_kmh = 0;
     t->time_in_motion_s = 0;
@@ -47,10 +51,21 @@ trip_t *trip_get_current()
 
 #define ALTI_STEP (5)
 
+static uint16_t time_still_s = 0;
+
+void trip_inc_time_still()
+{
+    time_still_s++;
+}
+
 void trip_handle_tick()
 {
     static uint16_t total_m_last = 0;
-    static uint16_t time_still_s = 0;
+    if (pause_trip) {
+        total_m_last = tacho_read_total_m();
+        return;
+    }
+
     uint16_t total_m = tacho_read_total_m();
     uint16_t delta_m = total_m - total_m_last;
     uint8_t kmh = tacho_read_kmh();
@@ -137,4 +152,14 @@ void trip_reset_day_km()
 uint32_t trip_get_day_m()
 {
     return persist.day_m;
+}
+
+void trip_set_pause(uint8_t pause)
+{
+    pause_trip = pause;
+}
+
+uint8_t trip_get_pause()
+{
+    return pause_trip;
 }

@@ -19,6 +19,8 @@ void handle_event(event_t event)
         tacho_tick_handler();
         trip_handle_tick();
     }
+    if (event & EVENT_WAKEUP)
+        trip_set_pause(1);
 
     if (event & EVENT_BUTTON_UP_LONG) {
         backlight_toggle();
