@@ -51,11 +51,11 @@ static void alti_puti(uint8_t pos, int16_t alti)
         lcd_puti_signed(pos, 4, alti);
 }
 
-static void vavg_puti(uint16_t avg)
+static void vavg_puti(uint16_t avg, uint8_t pos)
 {
-    lcd_puti(4, 2, avg / 10);
-    lcd_putc(6, '.');
-    lcd_puti(7, 1, avg % 10);
+    lcd_puti(pos, 2, avg / 10);
+    lcd_putc(pos + 2, '.');
+    lcd_puti(pos + 3, 1, avg % 10);
 }
 
 trip_t *trip_review = 0;
@@ -298,20 +298,21 @@ static void app_main(uint8_t view, const app_t *app, event_t event)
 
     case READOUT_TRIP_VAVG: {
         if (in_motion) {
-            lcd_puts(0, "avg");
-            lcd_puti(3, 2, trip_get_avg_kmh(trip));
+            lcd_putc(0, LCD_CUSTOM_CHAR_AVG);
+            uint16_t avg = trip_get_avg_0p1kmh(trip);
+            vavg_puti(avg, 1);
         }
         else {
             lcd_puts(0, "Mavg");
             uint16_t avg = trip_get_avg_0p1kmh(trip);
-            vavg_puti(avg);
+            vavg_puti(avg, 4);
         }
     } break;
 
     case READOUT_TRIP_VAVG_TOTAL: {
         lcd_puts(0, "Tavg");
         uint16_t avg = trip_get_total_avg_0p1kmh(trip);
-        vavg_puti(avg);
+        vavg_puti(avg, 4);
     } break;
 
     case N_READOUTS:

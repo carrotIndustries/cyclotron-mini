@@ -27,3 +27,4 @@ void lcd_power_down(void);
 #define LCD_CUSTOM_CHAR_KM (1)
 #define LCD_CUSTOM_CHAR_UP (2)
 #define LCD_CUSTOM_CHAR_DOWN (3)
+#define LCD_CUSTOM_CHAR_AVG (4)

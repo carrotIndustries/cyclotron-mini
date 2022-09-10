@@ -108,6 +108,16 @@ static const uint8_t custom_char_data[] = {
         0b01110,
         0b00100,
         0b00000,
+
+        // avg
+        0b00000,
+        0b00001,
+        0b01110,
+        0b01110,
+        0b01110,
+        0b10000,
+        0b00000,
+        0b00000,
 };
 
 static void lcd_init_custom_chars()
