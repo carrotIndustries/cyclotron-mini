@@ -81,12 +81,12 @@ void put_trip_km(uint8_t pos, uint32_t distance_m)
     else if (trip_km < 10U) {
         lcd_puti(pos + 0, 1, trip_km);
         lcd_putc(pos + 1, '.');
-        lcd_puti_lz(pos + 2, 2, ((distance_m + 5UL) / 10UL) % 100UL);
+        lcd_puti_lz(pos + 2, 2, (distance_m % 1000UL) / 10UL);
     }
     else if (trip_km < 100U) {
         lcd_puti(pos + 0, 2, trip_km);
         lcd_putc(pos + 2, '.');
-        lcd_puti(pos + 3, 1, ((distance_m + 50UL) / 100UL) % 10UL);
+        lcd_puti(pos + 3, 1, (distance_m % 1000UL) / 1000UL);
     }
     else {
         lcd_puti(pos + 0, 4, trip_km);
@@ -210,7 +210,7 @@ static void app_main(uint8_t view, const app_t *app, event_t event)
         uint32_t m = trip_get_day_m();
         lcd_puti(1, 3, m / 1000UL);
         lcd_putc(4, '.');
-        lcd_puti_lz(5, 2, ((m + 5UL) / 10UL) % 100UL);
+        lcd_puti_lz(5, 2, (m % 1000UL) / 10U);
         lcd_putc(7, LCD_CUSTOM_CHAR_KM);
     } break;
 
