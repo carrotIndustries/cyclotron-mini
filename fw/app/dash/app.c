@@ -13,24 +13,54 @@
 #include "clock.h"
 
 typedef enum {
-    READOUT_TEMP,
-    READOUT_TOTAL_KM,
-    READOUT_DAY_KM,
+    // 1
     READOUT_TRIP_KM,
+
+    // 2
     READOUT_TRIP_TIME_IN_MOTION,
-    READOUT_CLOCK,
     READOUT_TRIP_TIME_TOTAL,
     READOUT_TRIP_TIME_STILL,
+
+    // 3
     READOUT_TRIP_VMAX,
     READOUT_TRIP_VAVG,
     READOUT_TRIP_VAVG_TOTAL,
+
+    // 4
+    READOUT_TOTAL_KM,
+    READOUT_DAY_KM,
+
+    // 5
     READOUT_ALTI,
     READOUT_ASC,
     READOUT_DESC,
     READOUT_ALTI_MAX,
     READOUT_ALTI_MIN,
+
+    // 6
+    READOUT_CLOCK,
+    READOUT_TEMP,
+
     N_READOUTS,
 } readout_t;
+
+static uint8_t get_indicator(readout_t r)
+{
+    if (r >= READOUT_CLOCK)
+        return 5;
+    else if (r >= READOUT_ALTI)
+        return 4;
+    else if (r >= READOUT_TOTAL_KM)
+        return 3;
+    else if (r >= READOUT_TRIP_VMAX)
+        return 2;
+    else if (r >= READOUT_TRIP_TIME_IN_MOTION)
+        return 1;
+    else if (r >= READOUT_TRIP_KM)
+        return 0;
+    else
+        return LCD_CURSOR_OFF;
+}
 
 
 #define R(x) (1 << (READOUT_##x))
@@ -113,12 +143,14 @@ static void put_trip_time(uint8_t pos, uint32_t sec)
     }
 }
 
+#define INDICATOR_TIMEOUT_RELOAD 3
 
 static void app_main(uint8_t view, const app_t *app, event_t event)
 {
     lcd_clear();
     trip_t *trip;
     static uint8_t blink = 0;
+    static uint8_t indicator_timeout = 0;
 
     if (trip_review)
         trip = trip_review;
@@ -130,11 +162,13 @@ static void app_main(uint8_t view, const app_t *app, event_t event)
         do {
             INC_MOD(readout_current, N_READOUTS);
         } while (!readout_is_available(kmh, readout_current));
+        indicator_timeout = INDICATOR_TIMEOUT_RELOAD;
     }
     else if (event & EVENT_BUTTON_DOWN) {
         do {
             DEC_MOD(readout_current, N_READOUTS);
         } while (!readout_is_available(kmh, readout_current));
+        indicator_timeout = INDICATOR_TIMEOUT_RELOAD;
     }
     else if (event & EVENT_BUTTON_OK_LONG) {
         if (trip_review) {
@@ -159,6 +193,8 @@ static void app_main(uint8_t view, const app_t *app, event_t event)
     }
     else if (event & EVENT_TICK) {
         blink = !blink;
+        if (indicator_timeout)
+            indicator_timeout--;
     }
 
     if (!readout_is_available(kmh, readout_current))
@@ -320,6 +356,10 @@ static void app_main(uint8_t view, const app_t *app, event_t event)
     }
     if (in_motion)
         lcd_puti(6, 2, kmh);
+    if (indicator_timeout)
+        lcd_set_cursor(get_indicator(readout_current));
+    else
+        lcd_set_cursor(LCD_CURSOR_OFF);
 }
 
 static app_view_t views[] = {
