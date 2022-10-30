@@ -38,15 +38,15 @@ typedef enum {
     READOUT_ALTI_MIN,
 
     // 6
-    READOUT_CLOCK,
     READOUT_TEMP,
+    READOUT_CLOCK,
 
     N_READOUTS,
 } readout_t;
 
 static uint8_t get_indicator(readout_t r)
 {
-    if (r >= READOUT_CLOCK)
+    if (r >= READOUT_TEMP)
         return 5;
     else if (r >= READOUT_ALTI)
         return 4;
