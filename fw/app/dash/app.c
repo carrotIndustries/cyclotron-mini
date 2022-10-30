@@ -116,7 +116,7 @@ void put_trip_km(uint8_t pos, uint32_t distance_m)
     else if (trip_km < 100U) {
         lcd_puti(pos + 0, 2, trip_km);
         lcd_putc(pos + 2, '.');
-        lcd_puti(pos + 3, 1, (distance_m % 1000UL) / 1000UL);
+        lcd_puti(pos + 3, 1, (distance_m % 1000UL) / 100UL);
     }
     else {
         lcd_puti(pos + 0, 4, trip_km);
