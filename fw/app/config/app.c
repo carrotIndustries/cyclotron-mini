@@ -6,6 +6,8 @@
 #include "tacho.h"
 #include "power.h"
 #include "trip.h"
+#include "persist.h"
+#include "spare.h"
 
 static menu_state_t menu_state;
 uint8_t debug_item_current;
@@ -273,14 +275,45 @@ static const menu_item_adj_t menu_item_clock_cal = {
         .handler_get = c_clock_cal_get,
         .handler_set = c_clock_cal_set,
 };
+// spare mode
+
+static uint8_t c_spare_mode_get(void *ud)
+{
+    return persist.spare_mode;
+}
+
+static void c_spare_mode_set(uint8_t choice, void *user_data)
+{
+    persist.spare_mode = choice;
+}
+
+static const menu_item_choice_t menu_item_spare_mode = {
+        .type = MENU_ITEM_T_CHOICE,
+        .text = "Sm ",
+        .choice_pos = 3,
+        .handler_get = c_spare_mode_get,
+        .handler_set = c_spare_mode_set,
+        .n_choices = 3,
+        .choices =
+                {
+                        [SPARE_MODE_OFF] = "Off",
+                        [SPARE_MODE_ILLUM] = "Illum",
+                        [SPARE_MODE_BLINKEN] = "Blink",
+                },
+};
 
 // the menu itself
 
 static const menu_item_text_t *menu_items[] = {
-        (void *)&menu_item_tacho_cpr,         (void *)&menu_item_tacho_circ,
-        (void *)&menu_item_backlight_timeout, (void *)&menu_item_backlight_brightness,
-        (void *)&menu_item_lcd_contrast,      (void *)&menu_item_standby_timeout,
-        (void *)&menu_item_total_km,          (void *)&menu_item_clock,
+        (void *)&menu_item_tacho_cpr,
+        (void *)&menu_item_spare_mode,
+        (void *)&menu_item_tacho_circ,
+        (void *)&menu_item_backlight_timeout,
+        (void *)&menu_item_backlight_brightness,
+        (void *)&menu_item_lcd_contrast,
+        (void *)&menu_item_standby_timeout,
+        (void *)&menu_item_total_km,
+        (void *)&menu_item_clock,
         (void *)&menu_item_clock_cal,
 };
 

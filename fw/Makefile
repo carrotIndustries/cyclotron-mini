@@ -27,6 +27,7 @@ SRC = $(TARGET).c \
 	  alti.c\
 	  persist.c\
 	  clock.c\
+	  blinken.c\
 
 include app/sources.mk
 

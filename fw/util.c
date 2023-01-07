@@ -36,3 +36,13 @@ void set_digit(int16_t *va, uint8_t dig, int8_t dir, int16_t mi, int16_t ma)
     int16_t inc = dir * pow_10(dig);
     *va = CLAMP(*va + inc, mi, ma);
 }
+
+char hex2ascii(uint8_t v)
+{
+    if (v < 10) {
+        return '0' + v;
+    }
+    else {
+        return 'a' + v - 10;
+    }
+}

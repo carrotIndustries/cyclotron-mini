@@ -7,6 +7,8 @@ void delay_ms(uint16_t ms);
 
 void set_digit(int16_t *va, uint8_t dig, int8_t dir, int16_t mi, int16_t ma);
 
+char hex2ascii(uint8_t v);
+
 
 #define ARRAY_SIZE(x) (sizeof(x) / sizeof((x)[0]))
 #define INC_MOD(x, mod)                                                                                                \

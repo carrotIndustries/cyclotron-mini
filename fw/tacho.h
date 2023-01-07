@@ -18,3 +18,5 @@ uint8_t tacho_get_wakeup();
 
 uint16_t tacho_get_mock_counts_per_second();
 void tacho_set_mock_counts_per_second(uint16_t cps);
+
+uint16_t tacho_read_position_mm();

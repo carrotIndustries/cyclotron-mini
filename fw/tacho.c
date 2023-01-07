@@ -41,6 +41,7 @@ uint16_t tacho_counter_read(void)
 
 
 static uint16_t factor;
+static uint16_t mm_per_count;
 
 uint8_t tacho_get_counts_per_revolution()
 {
@@ -67,6 +68,7 @@ void tacho_set_circumference(uint16_t c)
 static void calculate_factor()
 {
     factor = (36L * persist.tacho_circumference_mm) / persist.tacho_counts_per_revolution;
+    mm_per_count = persist.tacho_circumference_mm / persist.tacho_counts_per_revolution;
 }
 
 static uint8_t tacho_kmh = 0;
@@ -121,4 +123,22 @@ uint16_t tacho_get_mock_counts_per_second()
 void tacho_set_mock_counts_per_second(uint16_t cps)
 {
     mock_counts_per_second = cps;
+}
+
+uint16_t tacho_read_position_mm()
+{
+    static uint16_t counts_last = 0;
+    uint16_t counts = tacho_counter;
+    uint16_t counts_delta = counts - counts_last;
+    counts_last = counts;
+    static uint16_t my_counts;
+    static uint16_t pos_mm;
+    
+    my_counts += counts_delta;
+    if(my_counts >= persist.tacho_counts_per_revolution) {
+        pos_mm += persist.tacho_circumference_mm;
+        my_counts -= persist.tacho_counts_per_revolution;
+    }
+    
+    return pos_mm + my_counts*mm_per_count;
 }

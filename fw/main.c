@@ -13,6 +13,8 @@
 #include "alti.h"
 #include "power.h"
 #include "persist.h"
+#include "blinken.h"
+#include "spare.h"
 
 volatile uint8_t reg_value;
 
@@ -24,6 +26,38 @@ void tick_init()
 
 volatile uint8_t tick_event = 0;
 volatile uint8_t global_power_on = 1;
+
+// static const char *txbuf = "Hello World";
+
+#define SPARE_OUT P1OUT
+#define SPARE_BIT BIT4
+
+static void uart_tx_bit()
+{
+    static uint8_t state = 0;
+    static uint8_t dout = 0;
+    if (state == 0) { // start bit
+        SPARE_OUT &= ~SPARE_BIT;
+        dout = blinken_get_tx_data();
+        state++;
+    }
+    else if (state >= 1 && state <= 8) // data bits
+    {
+        if (dout & 1)
+            SPARE_OUT |= SPARE_BIT;
+        else
+            SPARE_OUT &= ~SPARE_BIT;
+        dout >>= 1;
+        state++;
+    }
+    else // stop bit
+    {
+        SPARE_OUT |= SPARE_BIT;
+        state++;
+        if (state == 19)
+            state = 0;
+    }
+}
 
 void __attribute__((interrupt((TIMER0_A1_VECTOR)))) TA_ISR(void)
 {
@@ -55,6 +89,23 @@ void __attribute__((interrupt((TIMER0_A1_VECTOR)))) TA_ISR(void)
 
             return;
         }
+
+        switch (persist.spare_mode) {
+        case SPARE_MODE_BLINKEN:
+            uart_tx_bit();
+            break;
+
+        case SPARE_MODE_ILLUM:
+            if (backlight_get_state())
+                SPARE_OUT |= SPARE_BIT;
+            else
+                SPARE_OUT &= ~SPARE_BIT;
+            break;
+
+        default: // off
+            SPARE_OUT &= ~SPARE_BIT;
+        }
+
         power_on_freeze = 8;
         tacho_isr();
 
@@ -222,6 +273,7 @@ int main(void)
             lcd_power_down();
             backlight_set_state(0);
             adc_power_down();
+            SPARE_OUT &= ~SPARE_BIT;
             TA0CCR0 = 8191;
         }
         LPM3;

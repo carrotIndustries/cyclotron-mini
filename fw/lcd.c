@@ -243,16 +243,6 @@ void lcd_puti_signed(uint8_t dig, uint8_t len, int32_t value)
 }
 
 
-static char hex2ascii(uint8_t v)
-{
-    if (v < 10) {
-        return '0' + v;
-    }
-    else {
-        return 'a' + v - 10;
-    }
-}
-
 void lcd_putix(uint8_t dig, uint8_t len, uint32_t value)
 {
     dig += len - 1;

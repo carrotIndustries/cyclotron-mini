@@ -46,11 +46,18 @@ static const menu_item_text_t menu_item3 = {
         .handler = enter_standby,
 };
 
+static const menu_item_text_t menu_item4 = {
+        .text = "Blinken",
+        .handler = launch,
+        .user_data = (void *)&app_app_blinken,
+};
+
 static const menu_item_unknown_t *menu_items[] = {
         (void *)&menu_item0,
         (void *)&menu_item1,
         (void *)&menu_item2,
         (void *)&menu_item3,
+        (void *)&menu_item4,
 };
 
 static const menu_t menu = {

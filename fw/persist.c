@@ -1,4 +1,5 @@
 #include "persist.h"
+#include "spare.h"
 #include <msp430.h>
 #include <string.h>
 
@@ -19,6 +20,7 @@ void persist_reset(void)
     persist.alti_cal_alti_m = 0;
     persist.trip_current = 0;
     persist.clock_cal_ppm = 0;
+    persist.spare_mode = SPARE_MODE_ILLUM;
 }
 
 void persist_init(void)

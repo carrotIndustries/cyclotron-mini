@@ -8,3 +8,5 @@ charmap.c
 .cproject
 *.map
 .vscode
+.cache
+compile_commands.json

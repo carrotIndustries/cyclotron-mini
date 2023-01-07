@@ -26,6 +26,7 @@ typedef struct {
     uint8_t backlight_threshold;
     int8_t clock_cal_ppm;
     uint32_t day_m;
+    uint8_t spare_mode;
 } persist_t;
 
 extern persist_t persist; // __attribute__((section(".infoA")));

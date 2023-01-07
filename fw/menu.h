@@ -41,7 +41,7 @@ typedef struct {
     uint8_t (*handler_get)(void *user_data);
     uint8_t n_choices;
     uint8_t choice_pos;
-    char *choices[];
+    const char *choices[];
 } menu_item_choice_t;
 
 typedef struct {
